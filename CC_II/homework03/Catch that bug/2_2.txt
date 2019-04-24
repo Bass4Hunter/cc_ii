@@ -1,0 +1,25 @@
+1 ...
+2 class Point
+3 {
+4 private :
+5 	int x, y;
+6
+7 public :
+8 	Point (int u, int v) : x(u), y(v) {}
+9 	int getX () { return x; }
+10 	int getY () { return y; }
+11 	void setX (int newX ) const { x = newX ; } 
+12 };
+13
+14 int main ()
+15 {
+16 	Point p(5, 3);
+17 	p. setX (9001) ;
+18 	cout << p. getX () << ’ ’ << p. getY ();
+19 	return 0;
+20 }
+
+/* El metodo setX mediante la keyword const (que se encuentra despues de los parentesis) no esta 
+   permitido modificar los atributos dentro de la función ,sin embargo, los datos miembros fueron 
+   modificados */ 
+	   	 	  

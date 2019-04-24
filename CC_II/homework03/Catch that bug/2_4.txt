@@ -1,0 +1,23 @@
+1 ...
+2 class Point
+3 {
+4 private :
+5 	int x, y;
+6
+7 public :
+8 	Point (int u, int v) : x(u), y(v) {}
+9 	int getX () { return x; }
+10 	void setX (int newX );
+11 };
+12
+13 void setX (int newX ){ x = newX ; }
+14
+15 int main ()
+16 {
+17 	Point p(5, 3);
+18 	p. setX (0);
+19 	cout << p. getX () << " " << "\n";
+20 	return 0;
+21 }
+
+/* El método setX que se encuentra no pertence a la clase point , por lo tanto , no es posible ingresar al dato miembro x , para evitar un error inminente , el uso del operador 'scope' :: debe ser utilizado para indicar que fue declarado dentro de la clase Point */ 

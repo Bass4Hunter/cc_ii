@@ -1,0 +1,27 @@
+1 ...
+2 class Point
+3 {
+4   private :
+5       int x, y;
+6
+7   public :
+8       Point (int u, int v) : x(u), y(v) {}
+9       int getX () { return x; }
+10      int getY () { return y; }
+11      void doubleVal ()
+12      {
+13          x *= 2;
+14          y *= 2;
+15      }
+16 };
+17
+18 int main ()
+19 {
+20      const Point myPoint (5, 3) // " ';' ausente " 
+21      myPoint . doubleVal ();
+22      cout << myPoint . getX () << " " << myPoint . getY () << "\n";
+23      return 0;
+24 }
+
+
+/* la instancia creada se especifico que es constante , el uso del metodo doubleVal() no esta permitido debido que cambia valores */  

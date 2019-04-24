@@ -1,0 +1,20 @@
+ ...
+2 class Point
+3 {
+4 private :
+5 	int x, y;
+6
+7 public :
+8 	Point (int u, int v) : x(u), y(v) {}
+9 	int getX () { return x; }
+10 	int getY () { return y; }
+11 };
+12
+13 int main ()
+14 {
+15 	Point p(5, 3);
+16 	cout << p.x << " " << p.y << "\n";
+17 	return 0;
+18 }
+
+/* los datos miembros mediante los modificadores de acceso son privados , por ende ,  solo pueden ser accedidos dentro del ámbito de la clase */   

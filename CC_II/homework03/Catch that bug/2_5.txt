@@ -1,0 +1,13 @@
+1 ...
+2 int size ;
+3 cin >> size ;
+4 int * nums = new int[ size ];
+5 for(int i = 0; i < size ; ++i)
+6 {
+7 	cin >> nums [i];
+8 }
+9 ... // Calculations with nums omitted
+10 	delete nums ;
+11 ...
+es 
+/* El puntero nums apunta a un arreglo dinamico , por ende , el uso de delete[] es el adecuado */
